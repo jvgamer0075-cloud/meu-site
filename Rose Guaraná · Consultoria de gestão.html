@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rose Guaraná · Consultoria de gestão</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFFFFF;--bg2:#F7F7F9;--card:#FFFFFF;--ink:#16151D;--mute:#6C6B78;--line:#ECECF1;--acai:#5B52D6;--acai2:#EFEEFC;--red:#D0546A;--red2:#FCEFF1;--green:#2F9A6B;--green2:#E9F6F0;--gold:#B7862B;--gold2:#FBF4E4;--blue:#3F78D0;--blue2:#EBF2FC;--hero:#16151D;--herotxt:#FFFFFF;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F0F14;--bg2:#16161D;--card:#1A1A22;--ink:#F2F2F7;--mute:#9A9AA8;--line:#26262F;--acai:#9C95F5;--acai2:#23223A;--red:#EE8497;--red2:#2E1D22;--green:#6FCFA2;--green2:#1B2B24;--gold:#E3BE72;--gold2:#2D2619;--blue:#8BB2EE;--blue2:#1C2638;--hero:#0A0A0E}}
+:root[data-theme="dark"]{--bg:#0F0F14;--bg2:#16161D;--card:#1A1A22;--ink:#F2F2F7;--mute:#9A9AA8;--line:#26262F;--acai:#9C95F5;--acai2:#23223A;--red:#EE8497;--red2:#2E1D22;--green:#6FCFA2;--green2:#1B2B24;--gold:#E3BE72;--gold2:#2D2619;--blue:#8BB2EE;--blue2:#1C2638;--hero:#0A0A0E}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 Inter,"DM Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Inter,system-ui,sans-serif;font-weight:700;line-height:1.1;margin:0;letter-spacing:-.025em}
+a{color:inherit}
+.w{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+nav .w{display:flex;gap:4px;align-items:center;height:60px;overflow-x:auto}
+nav b{font-size:19px;margin-right:auto;white-space:nowrap;letter-spacing:-.02em}
+nav a{text-decoration:none;font-size:16px;font-weight:600;padding:8px 14px;border-radius:10px;color:var(--mute);white-space:nowrap}
+nav a:hover{background:var(--bg2);color:var(--ink)}
+.hero{background:var(--bg);color:var(--ink);padding:104px 0 0}
+.hero h1{font-size:clamp(42px,8vw,88px);letter-spacing:-.04em;max-width:860px}
+.hero h1 i{font-style:normal;color:var(--acai)}
+.hero p{max-width:580px;font-size:20px;color:var(--mute);margin:24px 0 0}
+.fruits{display:flex;gap:8px;flex-wrap:wrap;margin:32px 0 0}
+.fruits span{padding:7px 16px;border-radius:99px;font-weight:600;font-size:14px;border:1px solid var(--line)}
+.f1{background:var(--acai2);color:var(--acai);border-color:transparent!important}.f2{background:var(--red2);color:var(--red);border-color:transparent!important}.f3{background:var(--gold2);color:var(--gold);border-color:transparent!important}.f4{background:var(--green2);color:var(--green);border-color:transparent!important}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:72px}
+.stats div{background:var(--bg2);padding:24px;border-radius:16px}
+.stats strong{font-size:44px;display:block;line-height:1;letter-spacing:-.03em}
+.stats span{font-size:15px;color:var(--mute)}
+section{padding:104px 0}
+section.alt{background:var(--bg2)}
+.head{max-width:660px;margin-bottom:48px}
+.head h2{font-size:clamp(32px,5vw,48px)}
+.head p{color:var(--mute);margin:16px 0 0}
+.tool{display:inline-block;font-weight:700;font-size:clamp(20px,3vw,26px);color:var(--acai);margin-bottom:16px;letter-spacing:-.02em}
+.axis{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.q{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;display:grid;grid-template-columns:56px 1fr;gap:20px}
+.q .l{font-size:28px;font-weight:700;width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center}
+.q h3{font-size:22px;margin-bottom:2px}
+.q small{color:var(--mute);font-size:14px;display:block;margin-bottom:12px}
+.q ul{margin:0;padding-left:18px}.q li{margin:7px 0}
+.S .l{background:var(--blue2);color:var(--blue)}.W .l{background:var(--gold2);color:var(--gold)}.O .l{background:var(--green2);color:var(--green)}.T .l{background:var(--red2);color:var(--red)}
+.legend{display:flex;gap:24px;flex-wrap:wrap;color:var(--mute);font-size:15px;margin:0 0 20px}
+.legend b{color:var(--ink)}
+.tbl{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--card)}
+.row{display:grid;grid-template-columns:200px 1fr;border-top:1px solid var(--line)}
+.row:first-child{border-top:0}
+.row dt{padding:20px 24px;font-size:19px;font-weight:700;display:flex;flex-direction:column;justify-content:center;color:var(--acai)}
+.row dt small{font-weight:500;font-size:13px;color:var(--mute)}
+.row dd{margin:0;padding:20px 24px;display:flex;align-items:center;font-size:17px}
+.note{margin-top:18px;color:var(--mute);font-size:15px}
+.s5{display:grid;gap:12px}
+.s{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.s button{all:unset;box-sizing:border-box;cursor:pointer;width:100%;display:grid;grid-template-columns:48px 1fr auto;gap:18px;align-items:center;padding:18px 22px}
+.s button:focus-visible{outline:2px solid var(--acai);outline-offset:-2px}
+.s .n{width:48px;height:48px;border-radius:14px;background:var(--acai2);color:var(--acai);display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:700}
+.s h3{font-size:22px}.s em{font-style:normal;color:var(--mute);font-size:15px}
+.s .p{font-size:26px;color:var(--mute);transition:transform .2s}
+.s[data-open="true"] .p{transform:rotate(45deg)}
+.s .b{display:none;padding:0 24px 22px 88px}
+.s[data-open="true"] .b{display:block}
+.b ul{margin:0;padding-left:20px}.b li{margin:8px 0}
+.goal{background:var(--acai2);color:var(--ink);border-radius:18px;padding:24px 28px;margin-bottom:24px;font-size:18px}
+.end{background:var(--hero);color:#fff;padding:88px 0}
+.end h2{font-size:clamp(30px,4.5vw,44px);max-width:760px}
+.end p{color:#A9A9B8;max-width:620px;margin-top:16px}
+footer{background:var(--hero);color:#7E7E8C;padding:0 0 32px;font-size:14px}
+footer .w{border-top:1px solid #26262F;padding-top:24px}
+@media (max-width:700px){.row{grid-template-columns:1fr}.row dt{padding:14px 20px 0}.row dd{padding:4px 20px 16px;font-size:17px}.q{grid-template-columns:1fr}.s .b{padding:0 22px 22px}section{padding:64px 0}.hero{padding-top:56px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav><div class="w"><b>Rose Guaraná</b><a href="#swot">SWOT</a><a href="#w2h">5W2H</a><a href="#cincos">5S</a></div></nav>
+
+<header class="hero"><div class="w">
+<h1>Rose Guaraná: pedidos e caixa <i>em ordem</i></h1>
+<p>Resultado da consultoria de gestão: três ferramentas aplicadas ao dia a dia da lanchonete para reduzir falhas e facilitar a gestão.</p>
+<div class="fruits"><span class="f1">Açaí</span><span class="f2">Guaraná</span><span class="f3">Abacaxi temperado</span><span class="f4">Crepes</span></div>
+<div class="stats">
+<div><strong>3</strong><span>ferramentas de gestão aplicadas</span></div>
+<div><strong>4</strong><span>pontos fracos a corrigir</span></div>
+<div><strong>7</strong><span>perguntas no plano de ação</span></div>
+<div><strong>5</strong><span>sensos para organizar o ambiente</span></div>
+</div></div></header>
+
+<section id="swot"><div class="w">
+<div class="head"><span class="tool">Análise SWOT</span><h2>Onde a Rose Guaraná está hoje</h2>
+<p>Ferramenta de planejamento estratégico que separa pontos fortes, pontos fracos, oportunidades e ameaças. Aplicada com as informações coletadas durante a consultoria, mostrou o que sustenta o negócio e o que precisa de melhoria na gestão.</p></div>
+<p class="legend"><span><b>Fatores internos:</b> pontos fortes e fracos</span><span><b>Fatores externos:</b> oportunidades e riscos</span></p>
+<div class="axis">
+<article class="q S"><div class="l">S</div><div><h3>Pontos fortes</h3><small>Strengths · interno, positivo</small><ul><li>Qualidade dos produtos oferecidos.</li><li>Bom atendimento e atenção aos clientes.</li><li>Variedade no cardápio, com açaí, guaraná, crepes e abacaxi temperado.</li></ul></div></article>
+<article class="q W"><div class="l">W</div><div><h3>Pontos fracos</h3><small>Weaknesses · interno, negativo</small><ul><li>Falta de capacitação dos funcionários.</li><li>Falhas na organização e gestão dos pedidos.</li><li>Controle financeiro e de caixa inadequado.</li><li>Dificuldade na divisão de tarefas e colaboração da equipe.</li></ul></div></article>
+<article class="q O"><div class="l">O</div><div><h3>Oportunidades</h3><small>Opportunities · externo, positivo</small><ul><li>Atrair novos clientes por meio de ações promocionais.</li><li>Ampliar a divulgação dos produtos nas redes sociais.</li><li>Fidelizar clientes por meio de um atendimento de qualidade.</li></ul></div></article>
+<article class="q T"><div class="l">T</div><div><h3>Riscos</h3><small>Threats · externo, negativo</small><ul><li>Concorrência com outros estabelecimentos do mesmo segmento.</li><li>Perda de clientes devido a atrasos ou erros nos pedidos.</li><li>Redução do poder de compra dos consumidores.</li></ul></div></article>
+</div></div></section>
+
+<section id="w2h" class="alt"><div class="w">
+<div class="head"><span class="tool">Ferramenta 5W2H</span><h2>O plano de melhoria em sete perguntas</h2>
+<p>Método para organizar e executar ações: define o que fazer, por quê, onde, como, quem, quando e quanto custa. Na Rose Guaraná, estruturou as melhorias propostas na consultoria.</p></div>
+<dl class="tbl" style="margin:0">
+<div class="row c1"><dt>O quê?<small>What</small></dt><dd>Melhorar a organização dos pedidos e do caixa.</dd></div>
+<div class="row c2"><dt>Por quê?<small>Why</small></dt><dd>Para reduzir falhas e facilitar a gestão.</dd></div>
+<div class="row c3"><dt>Onde?<small>Where</small></dt><dd>Na empresa Rose Guaraná.</dd></div>
+<div class="row c4"><dt>Como?<small>How</small></dt><dd>Por meio de registros, treinamento e divisão de tarefas.</dd></div>
+<div class="row c5"><dt>Quem?<small>Who</small></dt><dd>Responsável pela empresa e colaboradores envolvidos.</dd></div>
+<div class="row c1"><dt>Quando?<small>When</small></dt><dd>Definir um prazo para a implementação.</dd></div>
+<div class="row c2"><dt>Quanto?<small>How much</small></dt><dd>Calcular os custos necessários para as melhorias.</dd></div>
+</dl>
+<p class="note">Prazo e custos ainda estão por definir: são os próximos passos do plano.</p>
+</div></section>
+
+<section id="cincos"><div class="w">
+<div class="head"><span class="tool">Metodologia 5S</span><h2>Um ambiente de trabalho mais limpo e eficiente</h2>
+<p>Metodologia japonesa de gestão da qualidade que melhora organização, limpeza, padronização e disciplina. Para a Rose Guaraná, foi proposta como melhoria do ambiente: separar o que é necessário, definir locais de armazenamento, manter a limpeza e criar hábitos.</p></div>
+<div class="goal">Objetivo: melhorar a organização do ambiente, otimizar os processos internos e aumentar a produtividade.</div>
+<div class="s5" id="s5">
+<div class="s" data-open="true"><button aria-expanded="true"><span class="n">1</span><span><h3>Seiri</h3><em>Utilização</em></span><span class="p" aria-hidden="true">+</span></button><div class="b"><ul><li>Retirar materiais desnecessários e verificar ingredientes.</li><li>Evitar o acúmulo de itens sem utilidade.</li></ul></div></div>
+<div class="s" data-open="false"><button aria-expanded="false"><span class="n">2</span><span><h3>Seiton</h3><em>Organização</em></span><span class="p" aria-hidden="true">+</span></button><div class="b"><ul><li>Organizar ingredientes, utensílios e pedidos por senhas.</li><li>Definir locais específicos para cada item.</li></ul></div></div>
+<div class="s" data-open="false"><button aria-expanded="false"><span class="n">3</span><span><h3>Seiso</h3><em>Limpeza</em></span><span class="p" aria-hidden="true">+</span></button><div class="b"><ul><li>Manter bancadas, equipamentos e utensílios limpos.</li><li>Estabelecer uma rotina de limpeza durante e após o expediente.</li></ul></div></div>
+<div class="s" data-open="false"><button aria-expanded="false"><span class="n">4</span><span><h3>Seiketsu</h3><em>Padronização</em></span><span class="p" aria-hidden="true">+</span></button><div class="b"><ul><li>Criar regras de higiene, organização e preparo dos pedidos.</li><li>Definir padrões para armazenamento dos ingredientes.</li></ul></div></div>
+<div class="s" data-open="false"><button aria-expanded="false"><span class="n">5</span><span><h3>Shitsuke</h3><em>Disciplina</em></span><span class="p" aria-hidden="true">+</span></button><div class="b"><ul><li>Incentivar os funcionários a cumprirem os padrões estabelecidos.</li><li>Promover reuniões para avaliar a aplicação dos 5S.</li></ul></div></div>
+</div></div></section>
+
+<div class="end"><div class="w"><h2>Menos erros nos pedidos, caixa sob controle, equipe alinhada.</h2>
+<p>SWOT mostrou o cenário, o 5W2H organizou as ações e o 5S sustenta a rotina. Juntos, ajudam a Rose Guaraná a manter a qualidade que os clientes já reconhecem.</p></div></div>
+<footer><div class="w">Rose Guaraná · Relatório de consultoria de gestão</div></footer>
+
+<script>
+document.querySelectorAll('.s button').forEach(function(b){b.addEventListener('click',function(){var s=b.parentNode,o=s.getAttribute('data-open')==='true';s.setAttribute('data-open',o?'false':'true');b.setAttribute('aria-expanded',o?'false':'true')})});
+</script>
+</body>
+</html>
